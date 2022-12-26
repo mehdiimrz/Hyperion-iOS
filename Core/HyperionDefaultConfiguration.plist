@@ -6,18 +6,22 @@
 	<dict>
 		<key>Triggers</key>
 		<array>
-			<string>RightEdgeSwipe</string>
-			<string>Shake</string>
+			<string>ThreeFingerSingleTap</string>
 		</array>
 	</dict>
 	<key>Simulator</key>
 	<dict>
 		<key>Triggers</key>
 		<array>
-			<string>Shake</string>
+			<string>ThreeFingerSingleTap</string>
 		</array>
 	</dict>
 	<key>Device</key>
-	<dict/>
+	<dict>
+		<key>Triggers</key>
+		<array>
+			<string>ThreeFingerSingleTap</string>
+		</array>
+	</dict>
 </dict>
 </plist>
