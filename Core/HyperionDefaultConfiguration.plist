@@ -6,21 +6,21 @@
 	<dict>
 		<key>Triggers</key>
 		<array>
-			<string>ThreeFingerSingleTap</string>
+			<string>TwoFingerDoubleTap</string>
 		</array>
 	</dict>
 	<key>Simulator</key>
 	<dict>
 		<key>Triggers</key>
 		<array>
-			<string>ThreeFingerSingleTap</string>
+			<string>TwoFingerDoubleTap</string>
 		</array>
 	</dict>
 	<key>Device</key>
 	<dict>
 		<key>Triggers</key>
 		<array>
-			<string>ThreeFingerSingleTap</string>
+			<string>TwoFingerDoubleTap</string>
 		</array>
 	</dict>
 </dict>
