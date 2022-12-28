@@ -40,8 +40,8 @@
     _pluginView.translatesAutoresizingMaskIntoConstraints = false;
 
     [self addSubview:_pluginView];
-    [_pluginView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = true;
-    [_pluginView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
+    [_pluginView.leftAnchor constraintEqualToAnchor:self.leftAnchor].active = true;
+    [_pluginView.rightAnchor constraintEqualToAnchor:self.rightAnchor].active = true;
     [_pluginView.topAnchor constraintEqualToAnchor:self.topAnchor].active = true;
     [_pluginView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = true;
 
@@ -70,8 +70,8 @@
     self.pluginScrollView.translatesAutoresizingMaskIntoConstraints = false;
     [self.view addSubview:self.pluginScrollView];
     
-    [self.pluginScrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
-    [self.pluginScrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.pluginScrollView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = true;
+    [self.pluginScrollView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = true;
     [self.pluginScrollView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor].active = true;
     [self.pluginScrollView.topAnchor constraintGreaterThanOrEqualToAnchor:self.view.topAnchor constant:0].active = true;
     [self.pluginScrollView.bottomAnchor constraintLessThanOrEqualToAnchor:self.view.bottomAnchor constant:0].active = true;
@@ -83,8 +83,8 @@
     self.pluginList.translatesAutoresizingMaskIntoConstraints = NO;
     self.pluginList.axis = UILayoutConstraintAxisVertical;
     
-    [self.pluginList.leadingAnchor constraintEqualToAnchor:self.pluginScrollView.leadingAnchor].active = YES;
-    [self.pluginList.trailingAnchor constraintEqualToAnchor:self.pluginScrollView.trailingAnchor].active = YES;
+    [self.pluginList.leftAnchor constraintEqualToAnchor:self.pluginScrollView.leftAnchor].active = YES;
+    [self.pluginList.rightAnchor constraintEqualToAnchor:self.pluginScrollView.rightAnchor].active = YES;
     [self.pluginList.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
     [self.pluginList.topAnchor constraintEqualToAnchor:self.pluginScrollView.topAnchor constant:15].active = YES;
     [self.pluginList.bottomAnchor constraintEqualToAnchor:self.pluginScrollView.bottomAnchor constant:15].active = YES;

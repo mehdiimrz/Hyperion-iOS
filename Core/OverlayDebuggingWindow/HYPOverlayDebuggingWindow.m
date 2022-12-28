@@ -78,8 +78,8 @@ static HYPOverlayDebuggingWindow *debuggingWindow;
     self.overlayContainer.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.overlayContainer];
 
-    [self.overlayContainer.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = YES;
-    [self.overlayContainer.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = YES;
+    [self.overlayContainer.leftAnchor constraintEqualToAnchor:self.leftAnchor].active = YES;
+    [self.overlayContainer.rightAnchor constraintEqualToAnchor:self.rightAnchor].active = YES;
     [self.overlayContainer.topAnchor constraintEqualToAnchor:self.topAnchor].active = YES;
     [self.overlayContainer.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = YES;
 

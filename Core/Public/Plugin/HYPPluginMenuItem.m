@@ -51,10 +51,10 @@
     [self.pluginImageView.heightAnchor constraintEqualToConstant:30].active = true;
     [self.pluginImageView.widthAnchor constraintEqualToConstant:30].active = true;
 
-    [self.pluginImageView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:45].active = true;
+    [self.pluginImageView.leftAnchor constraintEqualToAnchor:self.leftAnchor constant:45].active = true;
 
     self.titleLabel.numberOfLines = 2;
-    [self.titleLabel.leadingAnchor constraintEqualToAnchor:self.pluginImageView.trailingAnchor constant:28].active = true;
+    [self.titleLabel.leftAnchor constraintEqualToAnchor:self.pluginImageView.rightAnchor constant:28].active = true;
     [self.titleLabel.centerYAnchor constraintEqualToAnchor:self.pluginImageView.centerYAnchor].active = true;
     [self.titleLabel.widthAnchor constraintEqualToConstant:114].active = true;
 

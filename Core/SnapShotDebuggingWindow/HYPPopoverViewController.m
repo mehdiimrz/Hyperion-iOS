@@ -55,8 +55,8 @@
 
         self.viewController.view.translatesAutoresizingMaskIntoConstraints = false;
 
-        [self.viewController.view.leadingAnchor constraintEqualToAnchor:self.containerView.leadingAnchor].active = true;
-        [self.viewController.view.trailingAnchor constraintEqualToAnchor:self.containerView.trailingAnchor].active = true;
+        [self.viewController.view.leftAnchor constraintEqualToAnchor:self.containerView.leftAnchor].active = true;
+        [self.viewController.view.rightAnchor constraintEqualToAnchor:self.containerView.rightAnchor].active = true;
         [self.viewController.view.topAnchor constraintEqualToAnchor:self.containerView.topAnchor constant:30].active = true;
         [self.viewController.view.bottomAnchor constraintEqualToAnchor:self.containerView.bottomAnchor].active = true;
         self.viewController.view.clipsToBounds = true;
@@ -68,13 +68,13 @@
     [self.view addSubview:self.containerView];
 
     self.topAnchor = [self.containerView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10];
-    [self.containerView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
-    [self.containerView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.containerView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = true;
+    [self.containerView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = true;
 
     self.closeButton.translatesAutoresizingMaskIntoConstraints = false;
     [self.containerView addSubview:self.closeButton];
 
-    [self.closeButton.trailingAnchor constraintEqualToAnchor:self.containerView.trailingAnchor].active = true;
+    [self.closeButton.rightAnchor constraintEqualToAnchor:self.containerView.rightAnchor].active = true;
     [self.closeButton.topAnchor constraintEqualToAnchor:self.containerView.topAnchor].active = true;
 
     [self.closeButton.widthAnchor constraintEqualToConstant:30].active = true;

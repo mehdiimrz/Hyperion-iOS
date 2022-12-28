@@ -41,13 +41,13 @@
     attributedLabel.numberOfLines = 5;
     attributedLabel.attributedText = attributedString;
 
-    [attributedLabel.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor].active = YES;
-    [attributedLabel.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor].active = YES;
+    [attributedLabel.leftAnchor constraintEqualToAnchor:self.contentView.leftAnchor].active = YES;
+    [attributedLabel.rightAnchor constraintEqualToAnchor:self.contentView.rightAnchor].active = YES;
     [attributedLabel.topAnchor constraintEqualToAnchor:self.contentView.topAnchor constant:0].active = YES;
     [attributedLabel.bottomAnchor constraintEqualToAnchor:preview.topAnchor].active = YES;
 
-    [preview.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor].active = YES;
-    [preview.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor].active = YES;
+    [preview.leftAnchor constraintEqualToAnchor:self.contentView.leftAnchor].active = YES;
+    [preview.rightAnchor constraintEqualToAnchor:self.contentView.rightAnchor].active = YES;
     [preview.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor].active = YES;
 
     return self;

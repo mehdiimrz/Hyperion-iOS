@@ -67,8 +67,8 @@
     _currentPluginContainer.backgroundColor = [UIColor clearColor];
     [self addSubview:_currentPluginContainer];
     _currentPluginContainer.translatesAutoresizingMaskIntoConstraints = false;
-    [_currentPluginContainer.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = true;
-    [_currentPluginContainer.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = true;
+    [_currentPluginContainer.leftAnchor constraintEqualToAnchor:self.leftAnchor].active = true;
+    [_currentPluginContainer.rightAnchor constraintEqualToAnchor:self.rightAnchor].active = true;
     [_currentPluginContainer.topAnchor constraintEqualToAnchor:self.topAnchor].active = true;
     [_currentPluginContainer.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = true;
 

@@ -69,12 +69,12 @@
 
     [_halfSpeed.topAnchor constraintEqualToAnchor:self.titleLabel.bottomAnchor constant:20].active = true;
 
-    [_quarterSpeed.leadingAnchor constraintEqualToAnchor:self.pluginImageView.leadingAnchor].active = true;
+    [_quarterSpeed.leftAnchor constraintEqualToAnchor:self.pluginImageView.leftAnchor].active = true;
     [_quarterSpeed.topAnchor constraintEqualToAnchor:_halfSpeed.topAnchor].active = true;
-    [_quarterSpeed.trailingAnchor constraintEqualToAnchor:_halfSpeed.leadingAnchor constant:-29].active = true;
+    [_quarterSpeed.rightAnchor constraintEqualToAnchor:_halfSpeed.leftAnchor constant:-29].active = true;
 
     [_threeQuartersSpeed.topAnchor constraintEqualToAnchor:_halfSpeed.topAnchor].active = true;
-    [_threeQuartersSpeed.leadingAnchor constraintEqualToAnchor:_halfSpeed.trailingAnchor constant:29].active = true;
+    [_threeQuartersSpeed.leftAnchor constraintEqualToAnchor:_halfSpeed.rightAnchor constant:29].active = true;
 
     [_threeQuartersSpeed addTarget:self action:@selector(threeQuartersSpeedSelected) forControlEvents:UIControlEventTouchUpInside];
     [_quarterSpeed addTarget:self action:@selector(quarterSpeedSelected) forControlEvents:UIControlEventTouchUpInside];

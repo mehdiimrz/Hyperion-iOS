@@ -94,8 +94,8 @@ const CGFloat PluginListWidth = 280;
     self.scrollView = [[UIScrollView alloc] init];
     [self.scrollView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.snapshotContainerView addSubview: self.scrollView];
-    [self.scrollView.leadingAnchor constraintEqualToAnchor:self.snapshotContainerView.leadingAnchor].active = YES;
-    [self.scrollView.trailingAnchor constraintEqualToAnchor:self.snapshotContainerView.trailingAnchor].active = YES;
+    [self.scrollView.leftAnchor constraintEqualToAnchor:self.snapshotContainerView.leftAnchor].active = YES;
+    [self.scrollView.rightAnchor constraintEqualToAnchor:self.snapshotContainerView.rightAnchor].active = YES;
     [self.scrollView.topAnchor constraintEqualToAnchor:self.snapshotContainerView.topAnchor].active = YES;
     [self.scrollView.bottomAnchor constraintEqualToAnchor:self.snapshotContainerView.bottomAnchor].active = YES;
 
@@ -124,15 +124,15 @@ const CGFloat PluginListWidth = 280;
 
     [self.pluginListViewController.view.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.pluginListViewController.view.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = YES;
-    [self.pluginListViewController.view.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.pluginListViewController.view.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = true;
     [self.pluginListViewController.view.widthAnchor constraintEqualToConstant:PluginListWidth].active = true;;
 
     [self initializePlugins];
 
     [self.view addSubview:self.snapshotContainerView];
     self.snapshotContainerView.translatesAutoresizingMaskIntoConstraints = false;
-    [self.snapshotContainerView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
-    [self.snapshotContainerView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.snapshotContainerView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = true;
+    [self.snapshotContainerView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = true;
     [self.snapshotContainerView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = true;
     [self.snapshotContainerView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = true;
 

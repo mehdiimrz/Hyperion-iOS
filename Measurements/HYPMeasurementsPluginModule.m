@@ -59,8 +59,8 @@
     
     self.snapshotPluginView.translatesAutoresizingMaskIntoConstraints = false;
     [context addSubview:_snapshotPluginView];
-    [self.snapshotPluginView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor].active = true;
-    [self.snapshotPluginView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor].active = true;
+    [self.snapshotPluginView.leftAnchor constraintEqualToAnchor:context.leftAnchor].active = true;
+    [self.snapshotPluginView.rightAnchor constraintEqualToAnchor:context.rightAnchor].active = true;
     [self.snapshotPluginView.topAnchor constraintEqualToAnchor:context.topAnchor].active = true;
     [self.snapshotPluginView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
 }

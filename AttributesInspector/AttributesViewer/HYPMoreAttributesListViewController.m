@@ -79,8 +79,8 @@
     self.moreAttributesTableView.backgroundColor = self.view.backgroundColor;
     [self.view addSubview:self.moreAttributesTableView];
 
-    [self.moreAttributesTableView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
-    [self.moreAttributesTableView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.moreAttributesTableView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = true;
+    [self.moreAttributesTableView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = true;
     [self.moreAttributesTableView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = true;
     [self.moreAttributesTableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor].active = true;
 

@@ -53,8 +53,8 @@ const CGFloat InspectorHeight = 350;
     _snapshotPluginView = self.currentAttributesInteractionView;
     _snapshotPluginView.translatesAutoresizingMaskIntoConstraints = false;
     [context addSubview:_snapshotPluginView];
-    [_snapshotPluginView.leadingAnchor constraintEqualToAnchor:context.leadingAnchor].active = true;
-    [_snapshotPluginView.trailingAnchor constraintEqualToAnchor:context.trailingAnchor].active = true;
+    [_snapshotPluginView.leftAnchor constraintEqualToAnchor:context.leftAnchor].active = true;
+    [_snapshotPluginView.rightAnchor constraintEqualToAnchor:context.rightAnchor].active = true;
     [_snapshotPluginView.topAnchor constraintEqualToAnchor:context.topAnchor].active = true;
     [_snapshotPluginView.bottomAnchor constraintEqualToAnchor:context.bottomAnchor].active = true;
 }

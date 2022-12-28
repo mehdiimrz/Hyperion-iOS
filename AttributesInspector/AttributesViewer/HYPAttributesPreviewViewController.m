@@ -80,8 +80,8 @@
 
     [self.view addSubview:self.moreButton];
 
-    [self.overflowScrollView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = YES;
-    [self.overflowScrollView.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = YES;
+    [self.overflowScrollView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = YES;
+    [self.overflowScrollView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = YES;
     [self.overflowScrollView.topAnchor constraintEqualToAnchor:self.view.topAnchor].active = YES;
     [self.overflowScrollView.bottomAnchor constraintEqualToAnchor:self.divider.topAnchor].active = YES;
 }
@@ -98,8 +98,8 @@
 
     self.divider.backgroundColor = [UIColor colorWithRed:142/255.0 green:142/255.0 blue:147/255.0 alpha:1.0];
 
-    [self.divider.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor].active = true;
-    [self.divider.trailingAnchor constraintEqualToAnchor:self.view.trailingAnchor].active = true;
+    [self.divider.leftAnchor constraintEqualToAnchor:self.view.leftAnchor].active = true;
+    [self.divider.rightAnchor constraintEqualToAnchor:self.view.rightAnchor].active = true;
     [self.divider.heightAnchor constraintEqualToConstant:1].active = true;
     [self.divider.bottomAnchor constraintEqualToAnchor:self.moreButton.topAnchor].active = true;
 }
@@ -111,8 +111,8 @@
 
     containerView.translatesAutoresizingMaskIntoConstraints = false;
 
-    [containerView.leadingAnchor constraintEqualToAnchor:self.overflowScrollView.leadingAnchor].active = YES;
-    [containerView.trailingAnchor constraintEqualToAnchor:self.overflowScrollView.trailingAnchor].active = YES;
+    [containerView.leftAnchor constraintEqualToAnchor:self.overflowScrollView.leftAnchor].active = YES;
+    [containerView.rightAnchor constraintEqualToAnchor:self.overflowScrollView.rightAnchor].active = YES;
     [containerView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
     [containerView.topAnchor constraintEqualToAnchor:self.overflowScrollView.topAnchor].active = YES;
     [containerView.bottomAnchor constraintEqualToAnchor:self.overflowScrollView.bottomAnchor].active = YES;

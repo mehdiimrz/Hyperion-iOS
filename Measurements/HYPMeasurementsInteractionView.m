@@ -502,11 +502,11 @@
     measurementsContainer.layer.borderWidth = 1;
     measurementsContainer.clipsToBounds = true;
 
-    [measurementsContainer.centerXAnchor constraintEqualToAnchor:self.leadingAnchor constant:center.x].active = YES;
+    [measurementsContainer.centerXAnchor constraintEqualToAnchor:self.leftAnchor constant:center.x].active = YES;
     [measurementsContainer.centerYAnchor constraintEqualToAnchor:self.topAnchor constant:center.y].active = YES;
 
-    [measurementLabel.leadingAnchor constraintEqualToAnchor:measurementsContainer.leadingAnchor constant: 10].active = true;
-    [measurementLabel.trailingAnchor constraintEqualToAnchor:measurementsContainer.trailingAnchor constant:-10].active = true;
+    [measurementLabel.leftAnchor constraintEqualToAnchor:measurementsContainer.leftAnchor constant: 10].active = true;
+    [measurementLabel.rightAnchor constraintEqualToAnchor:measurementsContainer.rightAnchor constant:-10].active = true;
     [measurementLabel.topAnchor constraintEqualToAnchor:measurementsContainer.topAnchor constant:2].active = true;
     [measurementLabel.bottomAnchor constraintEqualToAnchor:measurementsContainer.bottomAnchor constant:-2].active = true;
 
